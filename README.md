@@ -28,8 +28,7 @@ For more information on the importance of a professional README for your reposit
 -->
 
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Ffree-photos-vectors%2Flogo&psig=AOvVaw3jiw2Im5Ymui4hLRHHBt-U&ust=1708610398179000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCMiR2PLLvIQDFQAAAAAdAAAAABAE" alt="logo" width="140"  height="auto" />
+  <!-- You are encouraged to replace this logo with your own! Otherwise, you can also remove it. -->
   <br/>
 
 <h3><b>Student Admission app </b></h3>

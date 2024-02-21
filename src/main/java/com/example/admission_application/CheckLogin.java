@@ -1,30 +1,33 @@
 package com.example.admission_application;
 
-import java.io.*;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
-import jakarta.servlet.http.*;
-import jakarta.servlet.annotation.*;
+import java.io.IOException;
 
 @WebServlet(name = "CheckLogin", value = "/CheckLogin")
 public class CheckLogin extends HttpServlet {
-    private String message;
 
-    public void init() {
-        message = "Hello World!";
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        String username = request.getParameter("uname");
+        String password = request.getParameter("password");
+
+        if ("Brenda".equals(username) && "abc123".equals(password)) {
+            // Authentication successful, set user information in session
+            HttpSession session = request.getSession();
+            session.setAttribute("username", username);
+
+            // Redirect to the homepage
+            response.sendRedirect("homepage.jsp");
+        } else {
+            // Login failed, redirect to login page or show an error message
+            System.out.println("Login failed. Please try again.");
+            response.sendRedirect("login.jsp"); // Adjust the URL as needed
+        }
     }
-
-    public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
-       String username = request.getParameter("uname");
-       String password = request.getParameter("password");
-
-       if(username.equals("Brenda") && password.equals("abc123")){
-response.sendRedirect("homepage.jsp");
-       }else{
-           System.out.println("Login failed please try again");
-       }
-
-    }
-
-//    public void destroy() {
-//    }
 }

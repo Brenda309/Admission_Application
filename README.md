@@ -65,13 +65,11 @@ For more information on the importance of a professional README for your reposit
 
 > This project aims to develop a student admission web application using Java Server Pages (JSP) adhering to specific requirements. The application will facilitate a seamless admission process for prospective students and manage their applications electronically.
 
-**[your_project__name]** is a...
-
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Tech stack i used in this project are:
+> The tech stack I used in this project is:
 
 <details>
   <summary>Client</summary>

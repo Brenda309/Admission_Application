@@ -23,6 +23,10 @@ public class HomePage extends HttpServlet {
         out.println("</body></html>");
     }
 
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+
+    }
+
     public void destroy() {
     }
 }

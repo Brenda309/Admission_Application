@@ -20,12 +20,11 @@ public class CheckLogin extends HttpServlet {
        if(username.equals("Brenda") && password.equals("abc123")){
 response.sendRedirect("homepage.jsp");
        }else{
-           response.sendRedirect("index.jsp");
-           System.out.println("Login failed please try again");;
+           System.out.println("Login failed please try again");
        }
 
     }
 
-    public void destroy() {
-    }
+//    public void destroy() {
+//    }
 }

@@ -98,66 +98,61 @@
     <div class="card-header">
         <h2>Student Admission form</h2>
     </div>
-    <div class="card-body ">
-
-                    <form method="post" action="CheckLogin">
-                        <table style="height: 100px;">
-                            <tr>
-                                <td>
+    <div class="card-body">
+        <form method="post" action="RegisterServlet"
+<%--              enctype="multipart/form-data"--%>
+        >
+            <table style="height: 100px;">
+                <tr>
+                    <td>
                         <div class="mb-3">
                             <label for="firstName" class="form-label">First name</label>
-                            <input type="Text" class="form-control" id="firstName" name = "fname">
+                            <input type="text" class="form-control" id="firstName" name="fName">
                         </div>
-                                    <div class="mb-3">
-                                        <label for="lastName" class="form-label">Last name</label>
-                                        <input type="Text" class="form-control" id="lastName" name = "lname">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="emailAdress" class="form-label">Email</label>
-                                        <input type="Text" class="form-control" id="emailAdress" name = "email">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="phoneNumber" class="form-label">Phone number</label>
-                                        <input type="Text" class="form-control" id="phoneNumber" name = "Phone">
-                                    </div>
                         <div class="mb-3">
-                            <label for="dateOfBirth" class="form-label">date of birth</label>
-                            <input type="date" class="form-control" id="dateOfBirth" type ="password" name="dob">
+                            <label for="lastName" class="form-label">Last name</label>
+                            <input type="text" class="form-control" id="lastName" name="lName">
                         </div>
-
-
-                </td>
-                <td><div class="mb-3">
-                    <label for="FacultyOfInterest" class="form-label">Faculty of interest</label>
-                    <input type="password" class="form-control" id="FacultyOfInterest" type ="password" name="facult">
-                </div>
-                    <div class="mb-3">
-                    <label for="department" class="form-label">Department of interest</label>
-                    <input type="password" class="form-control" id="department" type ="password" name="depart">
-                </div>
-    <div class="mb-3">
-        <label for="adress1" class="form-label">Address</label>
-        <input type="password" class="form-control" id="adress1" name="address">
-    </div>
-
-<div class="mb-3">
-    <label for="nationality" class="form-label">Nationality</label>
-    <input type="password" class="form-control" id="nationality" type ="text" name="nationality">
-</div>
-
-  <div class="mb-3">
-<label for="documentUpload" class="form-label">Upload Documents</label>
- <input type="file" class="form-control" id="documentUpload" name="documentUpload" accept=".pdf, .doc, .docx" required>
- </div>
-
-
-                </td>
-            </tr>
-        </table>
+                        <div class="mb-3">
+                            <label for="emailAddress" class="form-label">Email</label>
+                            <input type="text" class="form-control" id="emailAddress" name="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phoneNumber" class="form-label">Phone number</label>
+                            <input type="text" class="form-control" id="phoneNumber" name="phoneNumber">
+                        </div>
+                        <div class="mb-3">
+                            <label for="dateOfBirth" class="form-label">Date of birth</label>
+                            <input type="date" class="form-control" id="dateOfBirth" name="dateOfBirth">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="mb-3">
+                            <label for="facultyOfInterest" class="form-label">Faculty of interest</label>
+                            <input type="text" class="form-control" id="facultyOfInterest" name="faculty">
+                        </div>
+                        <div class="mb-3">
+                            <label for="department" class="form-label">Department of interest</label>
+                            <input type="text" class="form-control" id="department" name="department">
+                        </div>
+                        <div class="mb-3">
+                            <label for="address1" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="address1" name="address">
+                        </div>
+                        <div class="mb-3">
+                            <label for="nationality" class="form-label">Nationality</label>
+                            <input type="text" class="form-control" id="nationality" name="nationality">
+                        </div>
+                        <div class="mb-3">
+                            <label for="documentUpload" class="form-label">Upload Documents</label>
+                            <input type="file" class="form-control" id="documentUpload" name="documentUpload" accept=".pdf, .doc, .docx">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <button type="submit" class="btn btn-primary">Apply</button>
         </form>
-
     </div>
-
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
